@@ -598,42 +598,181 @@
                        breadcrumb-area
 =============================================================-->
 
-
     <section class="transfer-page padtobo-40">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-
                     <div class="transfer-form-wrapper mt-3">
-                        <div class="hero-cap mb-3 text-center">
-                            <h2>Make Your Trip</h2>
-                        </div>
+
                         <div class="step-nav">
 
                             <div class="step-1 active">
+                                <div class="step-number">1</div>
+                                <span> Select City</span>
+                            </div>
 
-                                <i class="fa-solid fa-check"></i>
+
+                            <div class="step-2 ">
+                                <div class="step-number">2</div>
+
                                 <span>
                                     Quick information
 
                                 </span>
                             </div>
-                            <div class="step-2">
-                                <i class="fa-solid fa-check"></i>
+                            <div class="step-3">
+                                <div class="step-number">3</div>
                                 <span>Personal information
 
                                 </span>
 
                             </div>
-                            <div class="step-3">
-                                <i class="fa-solid fa-check"></i>
+
+                            <div class="step-4">
+                                <div class="step-number">4</div>
                                 <span>Confirmation</span>
                             </div>
                         </div>
+
                         <form id="transferForm">
 
                             <!-- Step 1 -->
                             <div class="form-step step-1-content">
+                                <div class="hero-cap mb-3">
+                                    <h2>Choose your favorite place in Egypt </h2>
+                                </div>
+
+                                <div class="city-wrapper">
+                                    <div class="city-box">
+                                        <input type="checkbox" value="Cairo" id="Cairo" class="city-check"
+                                            name="cities[]">
+                                        <label for="Cairo" class="nice-label">
+                                            <img src="./assets/images/Cairo Day Tours1.webp" alt="city Icon">
+                                            <div class="plan-destination-content">
+
+                                                <h2>Cairo</h2>
+                                            </div>
+                                        </label>
+
+                                    </div>
+                                    <div class="city-box">
+                                        <input type="checkbox" value="Giza" id="Giza" class="city-check"
+                                            name="cities[]">
+                                        <label for="Giza" class="nice-label">
+                                            <img src="./assets/images/giza-pyramid-blonde-girl-egypt.jpg"
+                                                alt="city Icon">
+                                            <div class="plan-destination-content">
+
+                                                <h2>Giza</h2>
+
+
+                                            </div>
+                                        </label>
+
+                                    </div>
+
+                                    <div class="city-box">
+                                        <input type="checkbox" value="Dahab" id="Dahab" class="city-check"
+                                            name="cities[]">
+                                        <label for="Dahab" class="nice-label">
+                                            <img src="./assets/images/Dahab.jpg" alt="city Icon">
+                                            <div class="plan-destination-content">
+
+                                                <h2>Dahab</h2>
+
+
+                                            </div>
+                                        </label>
+
+                                    </div>
+
+
+
+                                    <div class="city-box">
+                                        <input type="checkbox" value="Hurghada" id="Hurghada" class="city-check"
+                                            name="cities[]">
+                                        <label for="Hurghada" class="nice-label">
+                                            <img src="./assets/images/Hurghada Private Tours1.webp" alt="city Icon">
+                                            <div class="plan-destination-content">
+
+                                                <h2>Hurghada</h2>
+
+
+                                            </div>
+                                        </label>
+
+                                    </div>
+
+
+
+                                    <div class="city-box">
+                                        <input type="checkbox" value="Luxuor" id="Luxuor" class="city-check"
+                                            name="cities[]">
+                                        <label for="Luxuor" class="nice-label">
+                                            <img src="./assets/images/Luxor Day Tours1.webp" alt="city Icon">
+                                            <div class="plan-destination-content">
+                                                <h2>Luxuor</h2>
+
+                                            </div>
+                                        </label>
+
+                                    </div>
+
+
+                                    <div class="city-box">
+                                        <input type="checkbox" value="Aswan" id="Aswan" class="city-check"
+                                            name="cities[]">
+                                        <label for="Aswan" class="nice-label">
+                                            <img src="./assets/images/Aswan Day Tours3.jpg" alt="city Icon">
+                                            <div class="plan-destination-content">
+
+                                                <h2>Aswan</h2>
+
+                                            </div>
+                                        </label>
+
+                                    </div>
+
+
+                                    <div class="city-box">
+                                        <input type="checkbox" value="El Gouna" id="El Gouna" class="city-check"
+                                            name="cities[]">
+                                        <label for="El Gouna" class="nice-label">
+                                            <img src="./assets/images/El Gouna.jpeg" alt="city Icon">
+                                            <div class="plan-destination-content">
+
+                                                <h2>El Gouna</h2>
+
+                                            </div>
+                                        </label>
+
+                                    </div>
+
+
+                                    <div class="city-box">
+                                        <input type="checkbox" value="Sinai" id="Sinai" class="city-check"
+                                            name="cities[]">
+                                        <label for="Sinai" class="nice-label">
+                                            <img src="./assets/images/Sinai.avif" alt="city Icon">
+                                            <div class="plan-destination-content">
+
+                                                <h2>Sinai</h2>
+
+                                            </div>
+                                        </label>
+
+                                    </div>
+
+
+                                </div>
+
+                                <div class="mt-3 text-end">
+                                    <button type="button" class="custom-btn next-btn disabled" disabled=""
+                                        onclick="nextStep()">Next</button>
+                                </div>
+                            </div>
+                            <!-- Step 2 -->
+                            <div class="form-step step-2-content d-none">
                                 <div class="hero-cap mb-3">
                                     <h2>When will you be traveling?</h2>
                                 </div>
@@ -732,404 +871,16 @@
                                 </div>
                             </div>
 
-                            <!-- Step 2 -->
-                            <div class="col-lg-12">
-
-                                <div class="form-step step-2-content d-none">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="input-box mb-4">
-                                                <input type="text" name="fullname" class=" required-field">
-                                                <label class="form-label">Full Name</label>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="input-box mb-3">
-                                                <input type="email" name="email" class="required-field">
-                                                <label class="form-label">Email Address</label>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="input-box mb-3">
-                                                <label class="form-label">Code Number</label>
-
-                                                <select class="form-select" aria-label="Default select example">
-                                                    <option selected=""> Code </option>
-
-                                                    <option value="93">Afghanistan +93</option>
-                                                    <option value="358">Aland Islands +358</option>
-                                                    <option value="355">Albania +355</option>
-                                                    <option value="213">Algeria +213</option>
-                                                    <option value="1684">American Samoa +1684</option>
-                                                    <option value="376">Andorra +376</option>
-                                                    <option value="244">Angola +244</option>
-                                                    <option value="1264">Anguilla +1264</option>
-                                                    <option value="672">Antarctica +672</option>
-                                                    <option value="1268">Antigua and Barbuda +1268</option>
-                                                    <option value="54">Argentina +54</option>
-                                                    <option value="374">Armenia +374</option>
-                                                    <option value="297">Aruba +297</option>
-                                                    <option value="61">Australia +61</option>
-                                                    <option value="43">Austria +43</option>
-                                                    <option value="994">Azerbaijan +994</option>
-                                                    <option value="1242">Bahamas +1242</option>
-                                                    <option value="973">Bahrain +973</option>
-                                                    <option value="880">Bangladesh +880</option>
-                                                    <option value="1246">Barbados +1246</option>
-                                                    <option value="375">Belarus +375</option>
-                                                    <option value="32">Belgium +32</option>
-                                                    <option value="501">Belize +501</option>
-                                                    <option value="229">Benin +229</option>
-                                                    <option value="1441">Bermuda +1441</option>
-                                                    <option value="975">Bhutan +975</option>
-                                                    <option value="591">Bolivia +591</option>
-                                                    <option value="599">Bonaire, Sint Eustatius and Saba +599</option>
-                                                    <option value="387">Bosnia and Herzegovina +387</option>
-                                                    <option value="267">Botswana +267</option>
-                                                    <option value="55">Bouvet Island +55</option>
-                                                    <option value="55">Brazil +55</option>
-                                                    <option value="246">British Indian Ocean Territory +246</option>
-                                                    <option value="673">Brunei Darussalam +673</option>
-                                                    <option value="359">Bulgaria +359</option>
-                                                    <option value="226">Burkina Faso +226</option>
-                                                    <option value="257">Burundi +257</option>
-                                                    <option value="855">Cambodia +855</option>
-                                                    <option value="237">Cameroon +237</option>
-                                                    <option value="1">Canada +1</option>
-                                                    <option value="238">Cape Verde +238</option>
-                                                    <option value="1345">Cayman Islands +1345</option>
-                                                    <option value="236">Central African Republic +236</option>
-                                                    <option value="235">Chad +235</option>
-                                                    <option value="56">Chile +56</option>
-                                                    <option value="86">China +86</option>
-                                                    <option value="61">Christmas Island +61</option>
-                                                    <option value="672">Cocos (Keeling) Islands +672</option>
-                                                    <option value="57">Colombia +57</option>
-                                                    <option value="269">Comoros +269</option>
-                                                    <option value="242">Congo +242</option>
-                                                    <option value="242">Congo, Democratic Republic of the Congo +242
-                                                    </option>
-                                                    <option value="682">Cook Islands +682</option>
-                                                    <option value="506">Costa Rica +506</option>
-                                                    <option value="225">Cote D'Ivoire +225</option>
-                                                    <option value="385">Croatia +385</option>
-                                                    <option value="53">Cuba +53</option>
-                                                    <option value="599">Curacao +599</option>
-                                                    <option value="357">Cyprus +357</option>
-                                                    <option value="420">Czech Republic +420</option>
-                                                    <option value="45">Denmark +45</option>
-                                                    <option value="253">Djibouti +253</option>
-                                                    <option value="1767">Dominica +1767</option>
-                                                    <option value="1809">Dominican Republic +1809</option>
-                                                    <option value="593">Ecuador +593</option>
-                                                    <option value="20">Egypt +20</option>
-                                                    <option value="503">El Salvador +503</option>
-                                                    <option value="240">Equatorial Guinea +240</option>
-                                                    <option value="291">Eritrea +291</option>
-                                                    <option value="372">Estonia +372</option>
-                                                    <option value="251">Ethiopia +251</option>
-                                                    <option value="500">Falkland Islands (Malvinas) +500</option>
-                                                    <option value="298">Faroe Islands +298</option>
-                                                    <option value="679">Fiji +679</option>
-                                                    <option value="358">Finland +358</option>
-                                                    <option value="33">France +33</option>
-                                                    <option value="594">French Guiana +594</option>
-                                                    <option value="689">French Polynesia +689</option>
-                                                    <option value="262">French Southern Territories +262</option>
-                                                    <option value="241">Gabon +241</option>
-                                                    <option value="220">Gambia +220</option>
-                                                    <option value="995">Georgia +995</option>
-                                                    <option value="49">Germany +49</option>
-                                                    <option value="233">Ghana +233</option>
-                                                    <option value="350">Gibraltar +350</option>
-                                                    <option value="30">Greece +30</option>
-                                                    <option value="299">Greenland +299</option>
-                                                    <option value="1473">Grenada +1473</option>
-                                                    <option value="590">Guadeloupe +590</option>
-                                                    <option value="1671">Guam +1671</option>
-                                                    <option value="502">Guatemala +502</option>
-                                                    <option value="44">Guernsey +44</option>
-                                                    <option value="224">Guinea +224</option>
-                                                    <option value="245">Guinea-Bissau +245</option>
-                                                    <option value="592">Guyana +592</option>
-                                                    <option value="509">Haiti +509</option>
-                                                    <option value="39">Holy See (Vatican City State) +39</option>
-                                                    <option value="504">Honduras +504</option>
-                                                    <option value="852">Hong Kong +852</option>
-                                                    <option value="36">Hungary +36</option>
-                                                    <option value="354">Iceland +354</option>
-                                                    <option value="91">India +91</option>
-                                                    <option value="62">Indonesia +62</option>
-                                                    <option value="98">Iran, Islamic Republic of +98</option>
-                                                    <option value="964">Iraq +964</option>
-                                                    <option value="353">Ireland +353</option>
-                                                    <option value="44">Isle of Man +44</option>
-                                                    <option value="972">Israel +972</option>
-                                                    <option value="39">Italy +39</option>
-                                                    <option value="1876">Jamaica +1876</option>
-                                                    <option value="81">Japan +81</option>
-                                                    <option value="44">Jersey +44</option>
-                                                    <option value="962">Jordan +962</option>
-                                                    <option value="7">Kazakhstan +7</option>
-                                                    <option value="254">Kenya +254</option>
-                                                    <option value="686">Kiribati +686</option>
-                                                    <option value="850">Korea, Democratic People's Republic of +850
-                                                    </option>
-                                                    <option value="82">Korea, Republic of +82</option>
-                                                    <option value="383">Kosovo +383</option>
-                                                    <option value="965">Kuwait +965</option>
-                                                    <option value="996">Kyrgyzstan +996</option>
-                                                    <option value="856">Lao People's Democratic Republic +856</option>
-                                                    <option value="371">Latvia +371</option>
-                                                    <option value="961">Lebanon +961</option>
-                                                    <option value="266">Lesotho +266</option>
-                                                    <option value="231">Liberia +231</option>
-                                                    <option value="218">Libyan Arab Jamahiriya +218</option>
-                                                    <option value="423">Liechtenstein +423</option>
-                                                    <option value="370">Lithuania +370</option>
-                                                    <option value="352">Luxembourg +352</option>
-                                                    <option value="853">Macao +853</option>
-                                                    <option value="389">Macedonia, the Former Yugoslav Republic of +389
-                                                    </option>
-                                                    <option value="261">Madagascar +261</option>
-                                                    <option value="265">Malawi +265</option>
-                                                    <option value="60">Malaysia +60</option>
-                                                    <option value="960">Maldives +960</option>
-                                                    <option value="223">Mali +223</option>
-                                                    <option value="356">Malta +356</option>
-                                                    <option value="692">Marshall Islands +692</option>
-                                                    <option value="596">Martinique +596</option>
-                                                    <option value="222">Mauritania +222</option>
-                                                    <option value="230">Mauritius +230</option>
-                                                    <option value="262">Mayotte +262</option>
-                                                    <option value="52">Mexico +52</option>
-                                                    <option value="691">Micronesia, Federated States of +691</option>
-                                                    <option value="373">Moldova, Republic of +373</option>
-                                                    <option value="377">Monaco +377</option>
-                                                    <option value="976">Mongolia +976</option>
-                                                    <option value="382">Montenegro +382</option>
-                                                    <option value="1664">Montserrat +1664</option>
-                                                    <option value="212">Morocco +212</option>
-                                                    <option value="258">Mozambique +258</option>
-                                                    <option value="95">Myanmar +95</option>
-                                                    <option value="264">Namibia +264</option>
-                                                    <option value="674">Nauru +674</option>
-                                                    <option value="977">Nepal +977</option>
-                                                    <option value="31">Netherlands +31</option>
-                                                    <option value="599">Netherlands Antilles +599</option>
-                                                    <option value="687">New Caledonia +687</option>
-                                                    <option value="64">New Zealand +64</option>
-                                                    <option value="505">Nicaragua +505</option>
-                                                    <option value="227">Niger +227</option>
-                                                    <option value="234">Nigeria +234</option>
-                                                    <option value="683">Niue +683</option>
-                                                    <option value="672">Norfolk Island +672</option>
-                                                    <option value="1670">Northern Mariana Islands +1670</option>
-                                                    <option value="47">Norway +47</option>
-                                                    <option value="968">Oman +968</option>
-                                                    <option value="92">Pakistan +92</option>
-                                                    <option value="680">Palau +680</option>
-                                                    <option value="970">Palestinian Territory, Occupied +970</option>
-                                                    <option value="507">Panama +507</option>
-                                                    <option value="675">Papua New Guinea +675</option>
-                                                    <option value="595">Paraguay +595</option>
-                                                    <option value="51">Peru +51</option>
-                                                    <option value="63">Philippines +63</option>
-                                                    <option value="64">Pitcairn +64</option>
-                                                    <option value="48">Poland +48</option>
-                                                    <option value="351">Portugal +351</option>
-                                                    <option value="1787">Puerto Rico +1787</option>
-                                                    <option value="974">Qatar +974</option>
-                                                    <option value="262">Reunion +262</option>
-                                                    <option value="40">Romania +40</option>
-                                                    <option value="7">Russian Federation +7</option>
-                                                    <option value="250">Rwanda +250</option>
-                                                    <option value="590">Saint Barthelemy +590</option>
-                                                    <option value="290">Saint Helena +290</option>
-                                                    <option value="1869">Saint Kitts and Nevis +1869</option>
-                                                    <option value="1758">Saint Lucia +1758</option>
-                                                    <option value="590">Saint Martin +590</option>
-                                                    <option value="508">Saint Pierre and Miquelon +508</option>
-                                                    <option value="1784">Saint Vincent and the Grenadines +1784</option>
-                                                    <option value="684">Samoa +684</option>
-                                                    <option value="378">San Marino +378</option>
-                                                    <option value="239">Sao Tome and Principe +239</option>
-                                                    <option value="966">Saudi Arabia +966</option>
-                                                    <option value="221">Senegal +221</option>
-                                                    <option value="381">Serbia +381</option>
-                                                    <option value="381">Serbia and Montenegro +381</option>
-                                                    <option value="248">Seychelles +248</option>
-                                                    <option value="232">Sierra Leone +232</option>
-                                                    <option value="65">Singapore +65</option>
-                                                    <option value="721">Sint Maarten +721</option>
-                                                    <option value="421">Slovakia +421</option>
-                                                    <option value="386">Slovenia +386</option>
-                                                    <option value="677">Solomon Islands +677</option>
-                                                    <option value="252">Somalia +252</option>
-                                                    <option value="27">South Africa +27</option>
-                                                    <option value="500">South Georgia and the South Sandwich Islands
-                                                        +500
-                                                    </option>
-                                                    <option value="211">South Sudan +211</option>
-                                                    <option value="34">Spain +34</option>
-                                                    <option value="94">Sri Lanka +94</option>
-                                                    <option value="249">Sudan +249</option>
-                                                    <option value="597">Suriname +597</option>
-                                                    <option value="47">Svalbard and Jan Mayen +47</option>
-                                                    <option value="268">Swaziland +268</option>
-                                                    <option value="46">Sweden +46</option>
-                                                    <option value="41">Switzerland +41</option>
-                                                    <option value="963">Syrian Arab Republic +963</option>
-                                                    <option value="886">Taiwan, Province of China +886</option>
-                                                    <option value="992">Tajikistan +992</option>
-                                                    <option value="255">Tanzania, United Republic of +255</option>
-                                                    <option value="66">Thailand +66</option>
-                                                    <option value="670">Timor-Leste +670</option>
-                                                    <option value="228">Togo +228</option>
-                                                    <option value="690">Tokelau +690</option>
-                                                    <option value="676">Tonga +676</option>
-                                                    <option value="1868">Trinidad and Tobago +1868</option>
-                                                    <option value="216">Tunisia +216</option>
-                                                    <option value="90">Turkey +90</option>
-                                                    <option value="7370">Turkmenistan +7370</option>
-                                                    <option value="1649">Turks and Caicos Islands +1649</option>
-                                                    <option value="688">Tuvalu +688</option>
-                                                    <option value="256">Uganda +256</option>
-                                                    <option value="380">Ukraine +380</option>
-                                                    <option value="971">United Arab Emirates +971</option>
-                                                    <option value="44">United Kingdom +44</option>
-                                                    <option value="1">United States +1</option>
-                                                    <option value="1">United States Minor Outlying Islands +1</option>
-                                                    <option value="598">Uruguay +598</option>
-                                                    <option value="998">Uzbekistan +998</option>
-                                                    <option value="678">Vanuatu +678</option>
-                                                    <option value="58">Venezuela +58</option>
-                                                    <option value="84">Viet Nam +84</option>
-                                                    <option value="1284">Virgin Islands, British +1284</option>
-                                                    <option value="1340">Virgin Islands, U.s. +1340</option>
-                                                    <option value="681">Wallis and Futuna +681</option>
-                                                    <option value="212">Western Sahara +212</option>
-                                                    <option value="967">Yemen +967</option>
-                                                    <option value="260">Zambia +260</option>
-                                                    <option value="263">Zimbabwe +263</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="input-box mb-3">
-                                                <input type="text" name="phone" class="required-field">
-                                                <label class="form-label">Phone Number</label>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4">
-                                            <div class="adult-counter">
-                                                <h5>Adults</h5>
-                                                <div class="counter-controls">
-                                                    <button type="button" class="decrease-btn"
-                                                        data-target="adults">-</button>
-                                                    <!-- Adult -->
-                                                    <input type="number" name="adults" data-type="adults" min="0"
-                                                        value="0" data-price="1" class="quantity-input">
-                                                    <button type="button" class="increase-btn"
-                                                        data-target="adults">+</button>
-                                                </div>
-                                            </div>
-                                        </div>
 
 
-                                        <div class="col-lg-4">
-                                            <div class="adult-counter">
-                                                <h5>Children</h5>
-                                                <div class="counter-controls">
-                                                    <button type="button" class="decrease-btn"
-                                                        data-target="children">-</button>
-                                                    <!-- Adult -->
-                                                    <input type="number" name="children" data-type="Children" min="0"
-                                                        value="0" data-price="1" class="quantity-input">
-                                                    <button type="button" class="increase-btn"
-                                                        data-target="children">+</button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="col-lg-4">
-                                            <div class="adult-counter">
-                                                <h5>Infants</h5>
-                                                <div class="counter-controls">
-                                                    <button type="button" class="decrease-btn"
-                                                        data-target="infants">-</button>
-                                                    <!-- Adult -->
-                                                    <input type="number" name="infants" data-type="Infants" min="0"
-                                                        value="0" data-price="1" class="quantity-input">
-                                                    <button type="button" class="increase-btn"
-                                                        data-target="infants">+</button>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-
-                                        <div class="col-lg-12">
-
-                                            <div class="price-filter mb-3 mt-4">
-                                                <h3>Price</h3>
-                                                <div class="labels">
-                                                    <span>Min</span>
-                                                    <span>Max</span>
-                                                </div>
-                                                <div class="range-inputs">
-                                                    <input type="number" id="min-input" value="0">
-                                                    <input type="number" id="max-input" value="9554">
-                                                </div>
-
-                                                <div class="slider">
-                                                    <div class="progress" style="left: 0%; right: 4.46%;"></div>
-                                                </div>
-                                                <div class="range">
-                                                    <input type="range" id="range-min" min="0" max="10000" value="0">
-                                                    <input type="range" id="range-max" min="0" max="10000" value="9554">
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-
-                                        <div class="col-lg-12">
-                                            <div class="input-box mb-3 mt-4">
-                                                <textarea name="textarea" id="" cols="30"></textarea>
-                                                <label class="form-label">Note </label>
-                                            </div>
-                                        </div>
-                                        <div class="mt-4 d-flex justify-content-between">
-                                            <button type="button" class="btn-effect back-btn"
-                                                onclick="prevStep()">Back</button>
-                                            <button type="button" class="custom-btn next-btn" disabled=""
-                                                onclick="nextStep()">Next</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Step 3 -->
-                            <div class="form-step step-3-content d-none">
-                                <h5>Confirm Your Details</h5>
-                                <p class="text-muted">This is a placeholder confirmation step. Add summary here.</p>
-                                <div class="mt-4 d-flex justify-content-between">
-                                    <button type="button" class="custom-btn back-btn" onclick="prevStep()">Back</button>
-                                    <button type="submit" class="custom-btn">Submit</button>
-                                </div>
-                            </div>
 
                         </form>
+
+
+
                     </div>
                 </div>
-                <div class="col-lg-4 ">
-
+                <div class="col-lg-4">
                     <div class="tailor-made-sidebar">
                         <h3 class="summary-head">Trip Summary </h3>
                         <div id="trip-initial" class="trip-initial mt-2">
@@ -1143,67 +894,17 @@
                         <div id="trip-summary" class="trip-summary " style="display: none;">
 
                             <div class="summary-box" style="display: none;">
-                                <span class="summary-item"><i class="fas fa-calendar-day"></i> Start Date:</span>
-                                <span id="startDate">Not selected</span>
+                                <span class="summary-item"><i class="fas fa-calendar-day"></i> Selected City :</span>
+                                <span id="City"></span>
                             </div>
-                            <div class="summary-box" style="display: none;">
-                                <span class="summary-item"><i class="fas fa-calendar-day"></i> End Date:</span>
-                                <span id="endDate">Not selected</span>
-                            </div>
-                            <div class="summary-box" style="display: none;">
-                                <span class="summary-item">Days:</span>
-                                <span id="summary-days">0</span>
-                            </div>
-                            <div class="summary-box" style="display:none;">
-                                <span class="summary-item"><i class="fas fa-calendar-day"></i>
-                                    Start Date:</span>
-                                <span id="startDate">Not selected</span>
-                            </div>
-
-                            <!-- <div class="summary-box  " style="display:none;">
-                <span class="summary-item"><i class="fas fa-calendar-check"></i>
-                  End Date:</span>
-                <span id="summary-end-date"></span>
-              </div> -->
-
-
-                            <div class="summary-box" style="display:none;">
-                                <span class="summary-item"><i class="fas fa-user"></i> Full Name:</span>
-                                <span id="summaryFullName"></span>
-                            </div>
-
-                            <div class="summary-box" style="display:none;">
-                                <span class="summary-item"><i class="fas fa-envelope"></i> Email:</span>
-                                <span id="summaryEmail"></span>
-                            </div>
-
-                            <div class="summary-box" style="display:none;">
-                                <span class="summary-item"><i class="fas fa-phone"></i> Phone:</span>
-                                <span id="summaryPhone"></span>
-                            </div>
-
-                            <div class="summary-box" style="display:none;">
-                                <span class="summary-item"><i class="fas fa-user"></i> Adults:</span>
-                                <span id="adultsCount"></span>
-                            </div>
-
-
-                            <div class="summary-box" style="display:none;">
-                                <span class="summary-item"><i class="fas fa-child"></i> Children:</span>
-                                <span id="childrenCount"></span>
-                            </div>
-
-                            <div class="summary-box" style="display:none;">
-                                <span class="summary-item"><i class="fas fa-baby"></i> Infants:</span>
-                                <span id="infantsCount"></span>
-                            </div>
-
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
+
+
+
 
     <!--============================================================
     Who is Your Egypt Tours?
@@ -2731,851 +2432,106 @@
     <!-- My Custom Js  -->
     <script src="./assets/js/script.js"></script>
     <!-- <script src="./assets/js/tailormade.js"></script> -->
-
-
-
-    <!-- 
-  <script>
-    // نخفي العنصر عند أول تفاعل
-    function hideTripInitial() {
-      const tripInit = document.getElementById('trip-initial');
-      if (tripInit) tripInit.style.display = 'none';
-    }
-
-    // نستمع لكل التفاعلات اللي ممكن تبين ان المستخدم بدأ الاختيار
-    const interactiveFields = document.querySelectorAll(
-      '#oneway select, #oneway input, #roundtrip select, #roundtrip input, input[name="adults"], input[name="children"], input[name="infants"]'
-    );
-
-    interactiveFields.forEach(el => {
-      el.addEventListener('change', hideTripInitial);
-      el.addEventListener('input', hideTripInitial); // للـ counters أو النصوص
-    });
-
-
-    document.addEventListener('DOMContentLoaded', function () {
-      let currentStep = 1;
-
-      const q = (s) => document.querySelector(s);
-      const qa = (s) => Array.from(document.querySelectorAll(s));
-
-      // Helper: هل كل الحقول المطلوبة ممتلئة
-      function areFieldsFilled(fields) {
-        return fields.length === 0 || fields.every(f => (f.value ?? '').toString().trim() !== '');
-      }
-
-      function getRequiredFieldsForCurrentStep() {
-        if (currentStep === 1) {
-          const activeTabPane = document.querySelector('.tab-pane.show.active, .tab-pane.active');
-          if (activeTabPane) return Array.from(activeTabPane.querySelectorAll('.required-field'));
-          return Array.from(document.querySelectorAll('#oneway .required-field, #roundtrip .required-field'));
-        }
-        const el = document.querySelector(`.step-${currentStep}-content`);
-        return el ? Array.from(el.querySelectorAll('.required-field')) : [];
-      }
-
-      // function validateStepFields() {
-      //   const nextBtn =
-      //     document.querySelector(`.step-${currentStep}-content .custom-btn, .step-${currentStep}-content .next-btn`);
-      //   if (!nextBtn) return;
-      //   const requiredFields = getRequiredFieldsForCurrentStep();
-      //   if (areFieldsFilled(requiredFields)) nextBtn.removeAttribute('disabled');
-      //   else nextBtn.setAttribute('disabled', 'disabled');
-      // }
-      function validateStepFields() {
-        const nextBtn = q(`.step-${currentStep}-content .next-btn`);
-        if (!nextBtn) return;
-        const requiredFields = getRequiredFieldsForCurrentStep();
-        if (areFieldsFilled(requiredFields)) {
-          nextBtn.removeAttribute('disabled');
-        } else {
-          nextBtn.setAttribute('disabled', 'disabled');
-        }
-      }
-
-
-      function showStep(step) {
-        currentStep = step;
-        document.querySelectorAll('.form-step').forEach(el => el.classList.add('d-none'));
-        document.querySelector(`.step-${step}-content`)?.classList.remove('d-none');
-        document.querySelectorAll('.step-nav div').forEach(el => el.classList.remove('active'));
-        document.querySelector(`.step-nav .step-${step}`)?.classList.add('active');
-        validateStepFields();
-      }
-
-      window.nextStep = function () {
-        const requiredFields = getRequiredFieldsForCurrentStep();
-        if (!areFieldsFilled(requiredFields)) { alert('Please fill all required fields.'); return; }
-        if (currentStep < 3) showStep(currentStep + 1);
-      };
-
-      window.prevStep = function () {
-        if (currentStep > 1) showStep(currentStep - 1);
-      };
-
-      // ====== تحديث Trip Summary لحظيًا ======
-      // function updateTripSummary() {
-      //   const isRoundTrip = document.getElementById('roundtrip-tab')?.classList.contains('active');
-
-      //   const summary = document.getElementById('trip-summary');
-
-      //   const updateField = (id, value) => {
-      //     const el = document.getElementById(id);
-      //     if (!el) return;
-      //     if (value && value.trim() !== '' && value !== '0') {
-      //       el.textContent = value;
-      //       el.parentElement.style.display = 'block';
-      //     } else {
-      //       el.parentElement.style.display = 'none';
-      //     }
-      //   };
-
-
-      //   let start = '', end = '', pickup = '', dropoff = '';
-
-      //   if (isRoundTrip) {
-      //     const p = document.querySelector('#roundtrip select[name="twoway-pickup"]');
-      //     const d = document.querySelector('#roundtrip select[name="twoway-dropoff"]');
-      //     pickup = p?.options[p.selectedIndex]?.text ?? '';
-      //     dropoff = d?.options[d.selectedIndex]?.text ?? '';
-      //     start = document.querySelector('#roundtrip input[name="start-date"]')?.value ?? '';
-      //     end = document.querySelector('#roundtrip input[name="end-date"]')?.value ?? '';
-      //   } else {
-      //     const p = document.querySelector('#oneway select[name="twoway-pickup"]');
-      //     const d = document.querySelector('#oneway select[name="twoway-dropoff"]');
-      //     pickup = p?.options[p.selectedIndex]?.text ?? '';
-      //     dropoff = d?.options[d.selectedIndex]?.text ?? '';
-      //     start = document.querySelector('#oneway input[name="start-date"]')?.value ?? '';
-      //     end = '';
-      //   }
-
-      //   updateField('startDate', start);
-      //   updateField('summary-end-date', end);
-      //   updateField('selectedCarHolder', pickup);
-      //   updateField('selectedLocation', dropoff);
-      //   updateField('summaryFullName', document.querySelector('input[name="fullname"]')?.value);
-      //   updateField('summaryEmail', document.querySelector('input[name="email"]')?.value);
-      //   updateField('summaryPhone', document.querySelector('input[name="phone"]')?.value);
-      //   updateField('adultsCount', document.querySelector('input[name="adults"]')?.value);
-      //   updateField('childrenCount', document.querySelector('input[name="children"]')?.value);
-      //   updateField('infantsCount', document.querySelector('input[name="infants"]')?.value);
-
-      //   // إظهار الملخص لو فيه أي بيانات
-      //   const hasData = Array.from(summary.querySelectorAll('span'))
-      //   .some(el => el.parentElement.style.display !== 'none');
-      //   summary.style.display = hasData ? 'block' : 'none';
-      // }
-
-
-
-
-      function updateTripSummary() {
-        const isRoundTrip = document.getElementById('roundtrip-tab')?.classList.contains('active');
-        const summary = document.getElementById('trip-summary');
-
-        const updateField = (id, value) => {
-          const el = document.getElementById(id);
-          if (!el) return;
-          const parent = el.parentElement;
-          if (value && value.toString().trim() !== '' && value.toString() !== '0') {
-            el.textContent = value;
-            parent.style.display = 'flex';
-          } else {
-            parent.style.display = 'none';
-          }
-        };
-
-        let start = '', end = '', pickup = '', dropoff = '';
-
-        if (isRoundTrip) {
-          const p = document.querySelector('#roundtrip select[name="twoway-pickup"]');
-          const d = document.querySelector('#roundtrip select[name="twoway-dropoff"]');
-          pickup = p?.value && p.value !== '' ? p.options[p.selectedIndex].text : '';
-          dropoff = d?.value && d.value !== '' ? d.options[d.selectedIndex].text : '';
-          start = document.querySelector('#roundtrip input[name="start-date"]')?.value ?? '';
-          end = document.querySelector('#roundtrip input[name="end-date"]')?.value ?? '';
-        } else {
-          const p = document.querySelector('#oneway select[name="twoway-pickup"]');
-          const d = document.querySelector('#oneway select[name="twoway-dropoff"]');
-          pickup = p?.value && p.value !== '' ? p.options[p.selectedIndex].text : '';
-          dropoff = d?.value && d.value !== '' ? d.options[d.selectedIndex].text : '';
-          start = document.querySelector('#oneway input[name="start-date"]')?.value ?? '';
-          end = '';
-        }
-
-        // تحديث كل الحقول
-        updateField('startDate', start);
-        updateField('summary-end-date', end);
-        updateField('selectedCarHolder', pickup);
-        updateField('selectedLocation', dropoff);
-        updateField('summaryFullName', document.querySelector('input[name="fullname"]')?.value);
-        updateField('summaryEmail', document.querySelector('input[name="email"]')?.value);
-        updateField('summaryPhone', document.querySelector('input[name="phone"]')?.value);
-        updateField('adultsCount', document.querySelector('input[name="adults"]')?.value);
-        updateField('childrenCount', document.querySelector('input[name="children"]')?.value);
-        updateField('infantsCount', document.querySelector('input[name="infants"]')?.value);
-
-        // إظهار أو إخفاء الملخص بالكامل
-        const hasData = Array.from(summary.querySelectorAll('span'))
-          .some(el => el.parentElement.style.display !== 'none');
-        summary.style.display = hasData ? 'block' : 'none';
-      }
-
-      // ====== Listeners ======
-      document.querySelectorAll('.required-field, .quantity-input').forEach(f => {
-        f.addEventListener('input', () => { validateStepFields(); updateTripSummary(); });
-        f.addEventListener('change', () => { validateStepFields(); updateTripSummary(); });
-      });
-
-      document.querySelectorAll('.increase-btn, .decrease-btn').forEach(btn => {
-        btn.addEventListener('click', () => setTimeout(updateTripSummary, 50));
-      });
-
-      document.querySelectorAll('.pickup-ways .nav-link').forEach(tab => {
-        tab.addEventListener('shown.bs.tab', () => { validateStepFields(); updateTripSummary(); });
-        tab.addEventListener('click', () => setTimeout(() => { validateStepFields(); updateTripSummary(); }, 100));
-      });
-
-      const transferForm = document.getElementById('transferForm');
-      if (transferForm) {
-        transferForm.addEventListener('submit', e => {
-          e.preventDefault();
-          alert('Form submitted!');
-        });
-      }
-
-      showStep(currentStep);
-      updateTripSummary();
-    });
-
-
-  </script>
-
-
-  <script>
-  
-    document.addEventListener('DOMContentLoaded', function () {
-      let currentStep = 1;
-
-      const q = s => document.querySelector(s);
-      const qa = s => Array.from(document.querySelectorAll(s));
-
-      function areFieldsFilled(fields) {
-        return fields.length === 0 || fields.every(f => f.value.trim() !== '');
-      }
-
-      function getRequiredFieldsForCurrentStep() {
-        const activeTabPane = document.querySelector('.tab-pane.show.active, .tab-pane.active');
-        return activeTabPane ? Array.from(activeTabPane.querySelectorAll('.required-field')) : [];
-      }
-
-      function validateStepFields() {
-        const nextBtn = q(`.step-${currentStep}-content .custom-btn`);
-        if (!nextBtn) return;
-        const requiredFields = getRequiredFieldsForCurrentStep();
-        if (areFieldsFilled(requiredFields)) nextBtn.removeAttribute('disabled');
-        else nextBtn.setAttribute('disabled', 'disabled');
-      }
-
-      function showStep(step) {
-        currentStep = step;
-        qa('.form-step').forEach(el => el.classList.add('d-none'));
-        q(`.step-${step}-content`)?.classList.remove('d-none');
-        validateStepFields();
-      }
-
-      window.nextStep = function () {
-        const requiredFields = getRequiredFieldsForCurrentStep();
-        if (!areFieldsFilled(requiredFields)) { alert('Please fill all required fields.'); return; }
-        if (currentStep < 3) showStep(currentStep + 1);
-      };
-
-      // ===== Update Trip Summary =====
-      function updateTripSummary() {
-        const summary = q('#trip-summary');
-
-        const updateField = (id, value) => {
-          const el = q('#' + id);
-          if (!el) return;
-          if (value && value.toString().trim() !== '' && value !== '0') {
-            el.textContent = value;
-            el.parentElement.style.display = 'flex';
-          } else {
-            el.parentElement.style.display = 'none';
-          }
-        };
-
-        const activeTab = q('.tab-pane.show.active, .tab-pane.active');
-        let start = '', end = '', days = '';
-        if (activeTab.id === 'oneway') {
-          start = q('#start-date')?.value ?? '';
-          end = q('#end-date')?.value ?? '';
-        } else if (activeTab.id === 'roundtrip') {
-          start = q('#month-picker')?.value ?? '';
-        } else if (activeTab.id === 'month-input') {
-          days = q('#select-days')?.value ?? '';
-        }
-
-        updateField('startDate', start);
-        updateField('summary-end-date', end);
-        updateField('summary-days', days);
-
-        // Show summary if any field is filled
-        const hasData = Array.from(summary.querySelectorAll('span')).some(el => el.parentElement.style.display !== 'none');
-        summary.style.display = hasData ? 'block' : 'none';
-      }
-
-      // Listeners
-      qa('.required-field').forEach(f => {
-        f.addEventListener('input', () => { validateStepFields(); updateTripSummary(); });
-        f.addEventListener('change', () => { validateStepFields(); updateTripSummary(); });
-      });
-
-      qa('.pickup-ways .nav-link').forEach(tab => {
-        tab.addEventListener('shown.bs.tab', () => { validateStepFields(); updateTripSummary(); });
-        tab.addEventListener('click', () => setTimeout(() => { validateStepFields(); updateTripSummary(); }, 100));
-      });
-
-      showStep(currentStep);
-      updateTripSummary();
-    });
-
-
-</script> -->
-
-
-
-
-
-
-
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            'use strict';
-
-            // ===== Helpers =====
-            const q = (s, root = document) => root.querySelector(s);
-            const qa = (s, root = document) => Array.from(root.querySelectorAll(s));
-            const debounce = (fn, d = 120) => {
-                let t; return (...args) => { clearTimeout(t); t = setTimeout(() => fn(...args), d); };
-            };
-
-            // ===== 1) إخفاء الـ trip-initial عند أول تفاعل =====
-            function hideTripInitial() {
-                const tripInit = q('#trip-initial');
-                if (tripInit) tripInit.style.display = 'none';
-            }
-            // كل الحقول اللي تعتبر "تفاعل أول"
-            qa('#oneway select, #oneway input, #roundtrip select, #roundtrip input, #month-input select, #month-input input, input[name="adults"], input[name="children"], input[name="infants"]')
-                .forEach(el => {
-                    el.addEventListener('change', hideTripInitial);
-                    el.addEventListener('input', hideTripInitial);
-                });
-
-            // ===== 2) إدارة الخطوات =====
-            let currentStep = 1;
-            const formSteps = qa('.form-step');
-            const maxStep = formSteps.length || 3; // احتياط لو مش متعرفة
-
-            function areFieldsFilled(fields) {
-                return fields.length === 0 || fields.every(f => ((f.value ?? '') + '').trim() !== '');
-            }
-
-            function getActiveTabPane() {
-                return q('.tab-pane.show.active, .tab-pane.active');
-            }
-
-            function getRequiredFieldsForCurrentStep() {
-                if (currentStep === 1) {
-                    const active = getActiveTabPane();
-                    if (active) return qa('.required-field', active);
-                    // fallback لو مفيش .active (نادراً)
-                    return qa('#oneway .required-field, #roundtrip .required-field, #month-input .required-field');
-                }
-                const stepEl = q(`.step-${currentStep}-content`);
-                return stepEl ? qa('.required-field', stepEl) : [];
-            }
-
-            function getNextBtnForStep() {
-                // ندعم الاسمين: .next-btn و .custom-btn
-                return q(`.step-${currentStep}-content .next-btn`) || q(`.step-${currentStep}-content .custom-btn`);
-            }
-
-            function validateStepFields() {
-                const nextBtn = getNextBtnForStep();
-                if (!nextBtn) return;
-                const requiredFields = getRequiredFieldsForCurrentStep();
-                if (areFieldsFilled(requiredFields)) nextBtn.removeAttribute('disabled');
-                else nextBtn.setAttribute('disabled', 'disabled');
-            }
-
-            function showStep(step) {
-                currentStep = step;
-                formSteps.forEach(el => el.classList.add('d-none'));
-                q(`.step-${step}-content`)?.classList.remove('d-none');
-
-                // تفعيل عنصر الناف في الشريط لو موجود
-                qa('.step-nav .active').forEach(el => el.classList.remove('active'));
-                q(`.step-nav .step-${step}`)?.classList.add('active');
-
-                validateStepFields();
-                updateTripSummary();
-            }
-
-            window.nextStep = function () {
-                const requiredFields = getRequiredFieldsForCurrentStep();
-                if (!areFieldsFilled(requiredFields)) { alert('Please fill all required fields.'); return; }
-                if (currentStep < maxStep) showStep(currentStep + 1);
-            };
-            window.prevStep = function () {
-                if (currentStep > 1) showStep(currentStep - 1);
-            };
-
-            // ===== 3) تحديث ملخص الرحلة =====
-            const safeUpdate = debounce(() => updateTripSummary(), 80);
-
-            function optionTextIfSelected(sel) {
-                if (!sel || !sel.value) return '';
-                const i = sel.selectedIndex;
-                return i >= 0 ? (sel.options[i]?.text ?? '') : '';
-            }
-
-            function updateFieldById(id, value) {
-                const el = q('#' + id);
-                if (!el) return;
-                const parent = el.parentElement;
-                const v = (value ?? '').toString().trim();
-                if (v !== '' && v !== '0') {
-                    el.textContent = v;
-                    if (parent) parent.style.display = 'flex';
-                } else {
-                    if (parent) parent.style.display = 'none';
-                }
-            }
-
-            function findStartIn(root) {
-                // يدعم: input[name="start-date"] أو #start-date أو #month-picker كبديل
-                return q('input[name="start-date"]', root)?.value
-                    || q('#start-date', root)?.value
-                    || q('#month-picker', root)?.value
-                    || '';
-            }
-
-            function findEndIn(root) {
-                return q('input[name="end-date"]', root)?.value
-                    || q('#end-date', root)?.value
-                    || '';
-            }
-
-
-
-
-            // document.addEventListener("DOMContentLoaded", function () {
-            //   const endDateInput = document.getElementById("end-date");
-            //   const summaryEndDate = document.getElementById("summary-end-date");
-
-            //   if (endDateInput && summaryEndDate) {
-            //     endDateInput.addEventListener("change", function () {
-            //       const val = endDateInput.value;
-            //       summaryEndDate.textContent = val ? val : "Not selected";
-            //     });
-            //   }
-            // });
-
-
-
-            // function findEndIn(root) {
-            //   // يدعم: input[name="end-date"] أو #end-date
-            //   return q('input[name="end-date"]', root)?.value
-            //       || q('#end-date', root)?.value
-            //       || '';
-            // }
-
-
-            // function findEndIn(root) {
-            //   const dateVal = q('input[name="end-date"]', root)?.value
-            //     || q('#end-date', root)?.value
-            //     || q('input[name="end-date"]', root)?.value
-            //     || q('#end-date', root)?.value
-            //     || '';
-            //   const timeVal = q('input[name="end-date"]', root)?.value
-            //     || q('#end-date', root)?.value
-            //     || '';
-            //   return timeVal ? `${dateVal} ${timeVal}` : dateVal;
-            // }
-
-
-            function findDaysIn(root) {
-                // للـ month-input لو موجود
-                return q('#select-days', root)?.value || '';
-            }
-            function findPickupText(root) {
-                // يدعم أسماء مختلفة للاسم: twoway-pickup / pickup
-                const sel = q('select[name="twoway-pickup"]', root) || q('select[name="pickup"]', root) || q('select[name*="pickup"]', root);
-                return optionTextIfSelected(sel);
-            }
-            function findDropoffText(root) {
-                const sel = q('select[name="twoway-dropoff"]', root) || q('select[name="dropoff"]', root) || q('select[name*="dropoff"]', root);
-                return optionTextIfSelected(sel);
-            }
-
-            function updateTripSummary() {
-                const summary = q('#trip-summary');
-                if (!summary) return;
-
-                const activeTab = getActiveTabPane();
-                const activeId = activeTab?.id || '';
-
-                let start = '', end = '', days = '', pickup = '', dropoff = '';
-
-                if (activeId === 'oneway') {
-                    start = findStartIn(activeTab);
-                    end = ''; // one-way غالبًا بلا نهاية
-                    pickup = findPickupText(activeTab);
-                    dropoff = findDropoffText(activeTab);
-                } else if (activeId === 'roundtrip') {
-                    // نحاول أولاً حقول start/end التقليدية، وإلا نfallback لـ #month-picker
-                    start = findStartIn(activeTab);
-                    end = findEndIn(activeTab);
-                    pickup = findPickupText(activeTab);
-                    dropoff = findDropoffText(activeTab);
-                } else if (activeId === 'month-input') {
-                    // سيناريو مخصص لمدخلات الشهر/الأيام
-                    start = findStartIn(activeTab); // لو فيه month-picker
-                    days = findDaysIn(activeTab);
-                    // pickup/dropoff اختياري حسب الصفحة
-                    pickup = findPickupText(activeTab);
-                    dropoff = findDropoffText(activeTab);
-                } else {
-                    // fallback لو مفيش تبويب نشط لسبب ما
-                    const root = document;
-                    start = findStartIn(root);
-                    end = findEndIn(root);
-                    days = findDaysIn(root);
-                    pickup = findPickupText(root);
-                    dropoff = findDropoffText(root);
-                }
-
-                // تحديث الحقول المعروضة في الملخص (هنحدّث أي عنصر موجود فقط)
-                updateFieldById('startDate', start);
-                updateFieldById('endDate', end);
-                updateFieldById('summary-days', days);
-                updateFieldById('selectedCarHolder', pickup); // الاسم عندك كده
-                updateFieldById('selectedLocation', dropoff);
-
-                updateFieldById('summaryFullName', q('input[name="fullname"]')?.value);
-                updateFieldById('summaryEmail', q('input[name="email"]')?.value);
-                updateFieldById('summaryPhone', q('input[name="phone"]')?.value);
-
-                updateFieldById('adultsCount', q('input[name="adults"]')?.value);
-                updateFieldById('childrenCount', q('input[name="children"]')?.value);
-                updateFieldById('infantsCount', q('input[name="infants"]')?.value);
-
-                // إظهار/إخفاء الملخص كله حسب وجود بيانات ظاهرة
-                const hasData = qa('span', summary).some(el => el.parentElement && el.parentElement.style.display !== 'none');
-                summary.style.display = hasData ? 'block' : 'none';
-            }
-
-            // ===== 4) Listeners عامة =====
-            // required-field و quantity-input
-            qa('.required-field, .quantity-input').forEach(f => {
-                f.addEventListener('input', () => { validateStepFields(); safeUpdate(); });
-                f.addEventListener('change', () => { validateStepFields(); safeUpdate(); });
-            });
-
-            // أزرار الزيادة/النقصان (لو موجودة)
-            qa('.increase-btn, .decrease-btn').forEach(btn => {
-                btn.addEventListener('click', () => setTimeout(() => { validateStepFields(); updateTripSummary(); }, 60));
-            });
-
-            // Tabs (Bootstrap)
-            qa('.pickup-ways .nav-link').forEach(tab => {
-                tab.addEventListener('shown.bs.tab', () => { validateStepFields(); updateTripSummary(); });
-                tab.addEventListener('click', () => setTimeout(() => { validateStepFields(); updateTripSummary(); }, 100));
-            });
-
-
-            // فورم الإرسال (اختياري)
-            const transferForm = q('#transferForm');
-            if (transferForm) {
-                transferForm.addEventListener('submit', (e) => {
-                    // عدّلي السطر التالي حسب المطلوب في مشروعك
-                    e.preventDefault();
-                    alert('Form submitted!');
-                });
-            }
-
-
-            // ===== خاص بالـ Return Date and Time =====
-            function findEndIn(root) {
-                return q('input[name="end-date"]', root)?.value
-                    || q('#end-date', root)?.value
-                    || '';
-            }
-
-            const endDateInput = document.getElementById('end-date');
-            if (endDateInput) {
-                endDateInput.addEventListener('change', () => {
-                    updateTripSummary();
-                });
-                endDateInput.addEventListener('input', () => {
-                    updateTripSummary();
-                });
-            }
-
-
-
-
-
-
-
-
-
-            // const endDateInput = document.getElementById('end-date');
-            // if (endDateInput) {
-            //   endDateInput.addEventListener('change', () => {
-            //     updateTripSummary();
-            //   });
-            //   endDateInput.addEventListener('input', () => {
-            //     updateTripSummary();
-            //   });
-            // }
-
-            // ===== 5) تشغيل مبدئي =====
-            showStep(currentStep);   // يعرض الخطوة الأولى
-            updateTripSummary();     // يبني الملخص من أي قيم موجودة
-        });
-    </script>
-
-
-    <script>
-        $("input[type='date']").flatpickr({
-            locale: "ar",
-            minDate: "today",
-
-        });
-
-    </script>
-
-    <script>
-        $(document).ready(function () {
-            $('.select2').select2({
-                placeholder: "Select an option",
-                allowClear: true,
-                minimumResultsForSearch: 5 // optional, only show search if more than 5 items
-            });
-        });
-
-    </script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const plusBtn = document.querySelectorAll(".increase-btn")
-            const minusBtn = document.querySelectorAll(".decrease-btn")
-            const inputQuantity = document.querySelectorAll(".quantity-input")
-            const finalPrice = document.querySelector(".final-price")
-            console.log(plusBtn, minusBtn);
-
-            plusBtn.forEach(btn => {
-                btn.addEventListener("click", e => {
-                    e.preventDefault();
-                    const parent = btn.parentElement;
-                    const input = parent.querySelector('input');
-                    let inputValue = parseInt(input.value) || 0;
-                    inputValue++;
-                    input.value = inputValue;
-                    updateTotalPrice();
-                });
-            });
-
-            minusBtn.forEach(btn => {
-                btn.addEventListener("click", e => {
-                    e.preventDefault();
-                    const parent = btn.parentElement;
-                    const input = parent.querySelector('input');
-                    const inputAttr = input.getAttribute("data-type")
-                    let inputValue = parseInt(input.value) || 0;
-                    // Different minimum values based on traveler type
-                    const minValue = inputAttr === "adults" ? 1 : 0;
-
-                    if (inputValue > minValue) {
-                        inputValue--;
-                        input.value = inputValue;
-                        updateTotalPrice();
-                    }
-                    updateTotalPrice();
-                });
-            });
-            inputQuantity.forEach(input =>
-                input.addEventListener("change", function () {
-                    updateTotalPrice();
-                })
-            )
-
-            function updateTotalPrice() {
-                let total = 0;
-
-                document.querySelectorAll('.quantity-input').forEach(input => {
-                    const quantity = parseInt(input.value) || 0;
-                    const unitPrice = parseFloat(input.dataset.price) || 0;
-                    const itemTotal = quantity * unitPrice;
-                    total += itemTotal;
-
-
-                    const priceDisplay = input.closest(".adult-pricing, .children-pricing, .infants-pricing")
-                        .querySelector(".price-amount");
-                    if (priceDisplay) {
-                        priceDisplay.textContent = `${quantity} * ${unitPrice} EUR`;
-                    }
-                });
-
-
-                const finalPriceElement = document.querySelector('.final-price');
-                finalPriceElement.textContent = `${total} EUR`;
-            }
-
-        })
-    </script>
-
-    <script>
-        flatpickr("#month-picker", {
-            dateFormat: "Y-m", // القيمة التي تُرسل
-
-            plugins: [
-                new monthSelectPlugin({
-                    shorthand: true,
-                    dateFormat: "m-Y",
-                    altFormat: "F Y"
-                })
-            ]
-        });
-    </script>
-    <script>
-        const rangeMin = document.getElementById("range-min");
-        const rangeMax = document.getElementById("range-max");
-        const minInput = document.getElementById("min-input");
-        const maxInput = document.getElementById("max-input");
-        const progress = document.querySelector(".progress");
-
-        let priceGap = 100;
-
-        function updateSlider() {
-            let minVal = parseInt(rangeMin.value);
-            let maxVal = parseInt(rangeMax.value);
-
-            progress.style.left = (minVal / rangeMin.max) * 100 + "%";
-            progress.style.right = 100 - (maxVal / rangeMax.max) * 100 + "%";
-
-            minInput.value = minVal;
-            maxInput.value = maxVal;
-        }
-
-        rangeMin.addEventListener("input", function () {
-            if (parseInt(rangeMax.value) - parseInt(rangeMin.value) <= priceGap) {
-                rangeMin.value = parseInt(rangeMax.value) - priceGap;
-            }
-            updateSlider();
-        });
-
-        rangeMax.addEventListener("input", function () {
-            if (parseInt(rangeMax.value) - parseInt(rangeMin.value) <= priceGap) {
-                rangeMax.value = parseInt(rangeMin.value) + priceGap;
-            }
-            updateSlider();
-        });
-
-        minInput.addEventListener("input", function () {
-            if (parseInt(minInput.value) < 0) minInput.value = 0;
-            if (parseInt(minInput.value) > parseInt(rangeMax.value) - priceGap) {
-                minInput.value = parseInt(rangeMax.value) - priceGap;
-            }
-            rangeMin.value = minInput.value;
-            updateSlider();
-        });
-
-        maxInput.addEventListener("input", function () {
-            if (parseInt(maxInput.value) > 10000) maxInput.value = 10000;
-            if (parseInt(maxInput.value) < parseInt(rangeMin.value) + priceGap) {
-                maxInput.value = parseInt(rangeMin.value) + priceGap;
-            }
-            rangeMax.value = maxInput.value;
-            updateSlider();
-        });
-
-        updateSlider();
-    </script>
-
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const nextBtn = document.querySelector('.custom-btn') || document.getElementById('nextBtn');
-            if (!nextBtn) {
-                console.error('Next button not found. Make sure there is an element with class "custom-btn" or id "nextBtn".');
-                return;
-            }
+            const cityCheckboxes = document.querySelectorAll('.city-check');
+            const nextBtn = document.querySelector('.next-btn');
+            const citySummary = document.getElementById('City');
+            const summaryBox = document.querySelector('.summary-box');
+            const tripSummary = document.getElementById('trip-summary');
 
-            // تحقق One Way: نطلب وجود تاريخ بداية ونهاية
-            function isOneWayValid() {
-                const inputs = Array.from(document.querySelectorAll('#oneway input[type="date"]'));
-                if (inputs.length >= 2) {
-                    return inputs[0].value.trim() !== '' && inputs[1].value.trim() !== '';
-                }
-                // لو في تاريخ واحد فقط -> نقبله لو مش فاضي
-                return inputs.some(i => i.value && i.value.trim() !== '');
-            }
+            cityCheckboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', () => {
+                    // تحقق إذا تم اختيار مدينة واحدة على الأقل
+                    const selectedCities = Array.from(cityCheckboxes)
+                        .filter(chk => chk.checked)
+                        .map(chk => chk.value);
 
-            // تحقق Round Trip: قيمة من #monthPicker أو أي input داخل #roundtrip
-            function isRoundTripValid() {
-                const el = document.getElementById('monthPicker') || document.querySelector('#roundtrip input');
-                return !!(el && String(el.value).trim() !== '');
-            }
+                    if (selectedCities.length > 0) {
+                        nextBtn.disabled = false;
+                        nextBtn.classList.remove('disabled');
 
-            // تحقق Not Sure Yet: رقم > 0 داخل #month-input
-            function isNotSureValid() {
-                const el = document.querySelector('#month-input input[type="number"]');
-                if (!el) return false;
-                const v = el.value.trim();
-                return v !== '' && Number(v) > 0;
-            }
+                        // عرض الملخص
+                        citySummary.textContent = selectedCities.join(', ');
+                        summaryBox.style.display = 'block';
+                        tripSummary.style.display = 'block';
+                    } else {
+                        nextBtn.disabled = true;
+                        nextBtn.classList.add('disabled');
 
-            function checkAll() {
-                const valid = isOneWayValid() || isRoundTripValid() || isNotSureValid();
-                nextBtn.disabled = !valid;
-                // لمسة جمالية (اختياري): toggle class
-                if (valid) nextBtn.classList.remove('disabled');
-                else nextBtn.classList.add('disabled');
-            }
-
-            // استمع لكل input/change في الصفحة (يضمن تغطية معظم الحالات)
-            document.addEventListener('input', checkAll, true);
-            document.addEventListener('change', checkAll, true);
-
-            // لو في مكتبات تغير القيم برمجياً (مثلاً flatpickr) — نجرب المراقبة
-            const observer = new MutationObserver(checkAll);
-            ['#roundtrip', '#month-input'].forEach(sel => {
-                const n = document.querySelector(sel);
-                if (n) observer.observe(n, { attributes: true, childList: true, subtree: true });
+                        summaryBox.style.display = 'none';
+                        tripSummary.style.display = 'none';
+                    }
+                });
             });
-
-            // فحص أولي
-            checkAll();
         });
 
-    </script>
+        // مثال دالة nextStep للتنقل بين الخطوات
+        function nextStep() {
+            const currentStep = document.querySelector('.step-nav .active');
+            const currentFormStep = document.querySelector('.form-step.step-1-content');
 
-    <script>
-        $("#start_date").flatpickr({
-            locale: "ar",
-            minDate: "today",
-            defaultDate: $('#start_date').val(),
+            // الانتقال للخطوة التالية بصرياً
+            const nextStepNav = currentStep.nextElementSibling;
+            const nextFormStep = currentFormStep.nextElementSibling;
 
+            if (nextStepNav && nextFormStep) {
+                currentStep.classList.remove('active');
+                nextStepNav.classList.add('active');
+
+                currentFormStep.style.display = 'none';
+                nextFormStep.style.display = 'block';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const cityCheckboxes = document.querySelectorAll('.city-check');
+            const nextBtn = document.querySelector('.next-btn');
+            const tripInitial = document.getElementById('trip-initial');
+
+            // في البداية، نخفي زر Next
+            nextBtn.style.display = 'none';
+
+            cityCheckboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', () => {
+                    // تحقق إذا تم اختيار أي مدينة
+                    const anySelected = Array.from(cityCheckboxes).some(chk => chk.checked);
+
+                    if (anySelected) {
+                        // إخفاء trip-initial
+                        tripInitial.style.display = 'none';
+
+                        // إظهار زر Next
+                        nextBtn.style.display = 'inline-block';
+                    } else {
+                        // لو ألغيت الاختيار، نرجع الحالة الأصلية
+                        tripInitial.style.display = 'block';
+                        nextBtn.style.display = 'none';
+                    }
+                });
+            });
         });
-        $("#end_date").flatpickr({
-            locale: "ar",
-            minDate: "today",
-            // defaultDate: [ new Date() ]
+function nextStep() {
+    // الخطوة الحالية في التاب الأعلى
+    const currentStepNav = document.querySelector('.step-nav .active');
+    const currentStepNum = currentStepNav.querySelector('.step-number').textContent;
+    const currentFormStep = document.querySelector(`.form-step.step-${currentStepNum}-content`);
 
-        });
+    // الخطوة التالية
+    const nextStepNav = currentStepNav.nextElementSibling;
+    const nextFormStep = currentFormStep.nextElementSibling;
+
+    if (nextStepNav && nextFormStep) {
+        // تحديث التاب الأعلى
+        currentStepNav.classList.remove('active');
+        nextStepNav.classList.add('active');
+
+        // إظهار/إخفاء خطوات الفورم
+        currentFormStep.classList.add('d-none');
+        nextFormStep.classList.remove('d-none');
+    }
+}
+
     </script>
 
 </body>
