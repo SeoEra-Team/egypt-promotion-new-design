@@ -3737,7 +3737,7 @@ nav {
 }
 
 .bg-peach {
-  background-color: #ddd;
+  background-color: #f1f2f3;
 }
 
 .breadcrumb-area .br-line-shape {
@@ -3786,7 +3786,7 @@ nav {
   font-size: 16px;
   font-weight: 500;
   transform: rotate(-14deg);
-  color: #fff;
+  color: #001d3b;
 }
 
 .breadcrumb-area .br-menu li:last-child {
